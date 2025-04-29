@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Sora:wght@100..800&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form class="contact" id="Form_submit">
+      <h2 class="Heading">Contact Us</h2>
+      <div class="name">
+        <div class="First_name_lable">
+          <label for="name">First Name *</label>
+          <div class="input_se">
+            <input type="text" class="First_name" />
+            <p class="Name_error" id="First_name_Error"></p>
+          </div>
+        </div>
+        <div class="Last_name_lable">
+          <label for="name">Last Name *</label>
+          <div class="input_se">
+            <input type="text" class="Last_name" />
+            <p class="Name_error" id="Last_name_Error"></p>
+          </div>
+        </div>
+      </div>
+      <div class="Email">
+        <div class="mail_div">
+          <label for="Email" class="email">Email Address *</label>
+        </div>
+        <div class="input_se">
+          <input type="email" class="eemail" />
+          <p class="Name_error" id="Email_error"></p>
+        </div>
+      </div>
+      <div class="name_query">
+        <div class="Query_div">
+          <label for="Email" class="email">Query Type *</label>
+        </div>
+
+        <div class="input_s">
+          <input
+            type="radio"
+            name="option"
+            class="General_name"
+            id="General_Enquiry"
+          />
+          <p class="Genral">General Enquiry</p>
+        </div>
+        <div class="input_s">
+          <input
+            type="radio"
+            name="option"
+            class="Suppor_name"
+            id="Support_Request"
+          />
+          <p class="Genral">Support Request</p>
+        </div>
+        <p class="Name_error" id="Query_Type_error"></p>
+      </div>
+      <div class="Email">
+        <div class="mail_div">
+          <label for="text" class="email">Message *</label>
+        </div>
+        <div class="input_se">
+          <textarea name="Message" class="Message_text"></textarea>
+        </div>
+        <p class="Name_error" id="Message_Error"></p>
+      </div>
+      <div class="end">
+        <input type="checkbox" name="option" id="consent" />
+        <p>I consent to being contacted by the team"</p>
+      </div>
+      <p class="Name_error" id="right_Error"></p>
+
+      <div class="submit">
+        <button type="submit" on>Submit</button>
+      </div>
+    </form>
+    <script src="scripte.js"></script>
+  </body>
+</html>
